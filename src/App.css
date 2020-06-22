@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=BioRhyme Expanded');
 
 :root {
   --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -9,25 +9,44 @@
 }
 
 body {
-  background-color: #f7f7f7;
+  background-image: url('Images/test.jpeg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  
+  color: white;
+  font-family: 'BioRhyme Expanded';
 }
 
 .container {
   margin: 30px auto;
-  width: 350px;
+  /* width: 350px; */
+  border-style: solid;
+  border-width: 3px;
+  border-color: #AA8945;
+  border-radius: 8%;
+  background-color: #10192A;
+  padding: 4% 13%;
 }
 
 h1 {
   letter-spacing: 1px;
   margin: 0;
   text-align: center;
+  color: #AA8945;
+  background-color: #10192A;
+  border: 3px double #AA8945;
+  border-left-style: none;
+  border-right-style: none;
+}
+
+.header-css{
+  padding: 3% 6%;
+  width: 100%;
 }
 
 h2 {
@@ -47,6 +66,13 @@ h4 {
   margin: 0;
   text-transform: uppercase;
   text-align: center;
+}
+
+.balance-head{
+  margin: 0 0 5% 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
 }
 
 .inc-exp-container {
@@ -74,12 +100,12 @@ h4 {
 }
 
 .money.plus {
-  color: #b6960a;
+  color: #AA8945;
   font-weight: bold;
 }
 
 .money.minus {
-  color: #2da3ad;
+  color: #313b4d;
   font-weight: bold;
 }
 
@@ -101,16 +127,22 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: lightsteelblue;
+  background-color: #10192A;
   box-shadow: var(--box-shadow);
-  color: #fff;
-  border: 0;
+  color: #AA8945;
+  border: 3px solid #AA8945;
+  border-radius: 8%;
   display: block;
-  font-size: 16px;
-  margin: 10px 0 30px;
+  font-size: 18px;
+  margin: 7% 25%;
   padding: 10px;
-  width: 100%;
+  width: 50%;
   font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #AA8945;
+  color: #10192A;
 }
 
 .btn:focus,
@@ -136,22 +168,22 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #b6960a;
+  border-right: 5px solid #AA8945;
 }
 
 .list li.plus:hover {
-  border-right: 5px solid #b6960a;
-  background-color: #b6960a;
+  border-right: 5px solid #AA8945;
+  background-color: #AA8945;
   color: #f7f7f7
 }
 
 .list li.minus {
-  border-right: 5px solid #2da3ad;
+  border-right: 5px solid #313b4d;
 }
 
 .list li.minus:hover {
-  border-right: 5px solid #2da3ad;
-  background-color: #2da3ad;
+  border-right: 5px solid #313b4d;
+  background-color: #313b4d;
   color: #f7f7f7
 }
 
@@ -174,4 +206,11 @@ input[type='number'] {
 
 .list li:hover .delete-btn {
   opacity: 1;
+}
+.header-cs{
+  color: #AA8945;
+}
+.border-css{
+  margin-top: 10%;
+  margin-bottom: 10%;
 }

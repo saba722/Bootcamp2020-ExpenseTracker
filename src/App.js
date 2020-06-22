@@ -10,6 +10,7 @@ import { GlobalProvider } from './context/GlobalState';
 
 function App() {
   return (
+    <div className="border-css">
     <GlobalProvider>
       <Header />
       <div className="container">
@@ -19,6 +20,7 @@ function App() {
         <AddTransaction />
       </div>
     </GlobalProvider>
+    </div>
   );
 }
 

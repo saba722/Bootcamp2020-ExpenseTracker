@@ -4,7 +4,7 @@ import { GlobalContext } from '../context/GlobalState'
 export const AddTransaction = () => {
     
     const [description, setDescription] = useState('');
-    const [transactionAmount, setTransactionAmount] = useState(0);
+    const [transactionAmount, setTransactionAmount] = useState('');
     const {addTransaction} = useContext(GlobalContext);
 
     const onSubmit = (e) => {
@@ -31,6 +31,7 @@ export const AddTransaction = () => {
                             value={description} 
                             id="description"
                             onChange={(e) => setDescription(e.target.value)}
+                            required="required"
                     />
                 </div>
                 <div className="form-control">
@@ -43,6 +44,7 @@ export const AddTransaction = () => {
                         id="transactionamount"
                         value={transactionAmount}
                         onChange={(e) => setTransactionAmount(e.target.value)}
+                        required="required"
                     />
                 </div>
                 <button className="btn">Add Transaction</button>

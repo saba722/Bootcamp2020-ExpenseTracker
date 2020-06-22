@@ -4,7 +4,7 @@ import { Transaction } from './Transaction'
 
 export const TransactionHistory = () => {
     const { transactions } = useContext(GlobalContext);
-    console.log(transactions);
+    //console.log(transactions);
     return(
         <div>
             <h3>Transaction History</h3>

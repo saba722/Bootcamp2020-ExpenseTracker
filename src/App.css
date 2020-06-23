@@ -7,7 +7,9 @@
 * {
   box-sizing: border-box;
 }
-
+.clr-blue{
+  color: #10192A;
+}
 body {
   background-image: url('Images/test.jpeg');
   background-size: cover;
